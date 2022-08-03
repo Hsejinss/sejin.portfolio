@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- js -->
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js"></script>
+    <script src="./js/fullpage.js"></script>
+    <script src="./js/script.js"></script>
+
+    <title>sejin's portfolio</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 마우스 -->
+        <div class="pen-outer">
+            <div class="pen-cursor"></div>
+        </div>
+        <!-- 전체 베너 영역 -->
+        <section class="banner section">
+            <div class="container">
+                <!-- <div class="banner-bg">
+                    <img src="./img/banner-img.jpg" alt="">
+                </div> -->
+
+                <!-- 헤더영역 -->
+                <header class="header-area">
+
+                    <!-- 왼쪽 메뉴 영역 -->
+                    <ul class="left-menu">
+                        <li class="m-main">
+                            <a href="#none">MAIN</a>
+                        </li>
+                        <li class="m-work">
+                            <a href="#none">WORK</a>
+                        </li>
+                        <li class="m-about">
+                            <a href="#none">ABOUT</a>
+                        </li>
+                        <li class="m-contact">
+                            <a href="#none">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <!-- 로고 영역 -->
+                    <a href="#none" class="header-logo">
+                        <img src="./img/header-logo.svg" alt="">
+                    </a>
+
+                    <!-- 오른쪽 메뉴 영역 -->
+                    <ul class="right-menu">
+                        <li>
+                            <a href="#none">INSTAGRAM</a>
+                        </li>
+                        <li>
+                            <a href="#none">RESUME</a>
+                        </li>
+                    </ul>
+
+                    <!-- 햄버거 영역 -->
+                    <a href="#none" id="hamburger">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </header>
+                
+                <!-- 베너 메인 영역 -->
+                <div class="banner-main-area">
+                    <div class="m-box">
+                        <div class="semicolon">
+                            <img src="./img/banner-semicolon.jpg" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <h1>한세진의 기록서</h1>
+                            <p>record of 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 하단 스크롤 버튼 -->
+                <div class="b-arrrow-btn">
+                    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M68 40C68 55.464 55.464 68 40 68C24.536 68 12 55.464 12 40C12 24.536 24.536 12 40 12C55.464 12 68 24.536 68 40Z" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M27.9814 44.0915L38.3905 33.6824C39.2691 32.8038 40.6938 32.8038 41.5724 33.6824L51.9814 44.0915" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-1 영역 -->
+        <section class="sec-1 section">
+            <div class="container">
+                <div class="content-box">
+                    <div class="left-area">
+                        <div class="profile-img">
+                            <img src="./img/profile.jpg" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="right-area">
+                        <div class="about-info">
+                            <div class="l-info">
+                                <div class="top-main-head">
+                                    <h2 class="head-txt">기록하는 디자이너</h2>
+                                    <!-- svg영역, 가상요소 before, after 사용해서 [] 만들어주기 -->
+                                    <div class="name"></div>
+                                    <h2 class="head-txt">입니다</h2>
+                                    <!-- 내용채우기 -->
+                                </div>
+        
+                                <div class="sub-head-txt">
+                                    <p>안녕하세요. 기록하는 디자이너 한세진입니다.
+                                        평소 기억에 남는 것, 남아야 할 것들에 대한 기록을 항상 합니다.
+                                        사소한 습관으로 이어져 현재까지도 모든 것을 기록하고
+                                        세상을 담는, 의미를 담는 디자인을 합니다.
+                                    </p>
+                                </div>
+        
+                                <div class="personal-info">
+                                    <p class="sub-head">PERSONAL INFO</p>
+                                    <div class="info-box">
+                                        <div class="l-box">
+                                            <ul>
+                                                <li>1999.07.18</li>
+                                                <li>hansejin5896pp@gmail.com</li>
+                                                <li>010-5013-8799</li>
+                                            </ul>
+                                        </div>
+                                        <div class="r-box">
+                                            <p class="mbti"></p>
+                                            <ul>
+                                                <li>ISFJ (용감한 수호자)</li>
+                                                <li>#열정적</li>
+                                                <li>#책임감</li>
+                                                <li>#계획적</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <div class="r-info">
+                                <div class="r-t-info">
+                                    <div class="education">
+                                        <p class="sub-head">EDUCATION</p>
+        
+                                        <div class="body-txt">
+                                            <p>YORK UNIVERSITY</p>
+                                            <span>2021.05</span>
+                                        </div>
+                                        <div class="body-txt">
+                                            <p>가좌고등학교</p>
+                                            <span>2018.03</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="cerfificate">
+                                        <p class="sub-head">CERTIFICATE</p>
+        
+                                        <div class="body-txt">
+                                            <p>GTQ 그래픽 기술자격 1급</p>
+                                            <span>2015.05</span>
+                                        </div>
+                                        <div class="body-txt">
+                                            <p>GTQi 그래픽 기술자격 일러스트 1급</p>
+                                            <span>2016.03</span>
+                                        </div>
+                                        <div class="body-txt">
+                                            <p>UI / UX Design class (UI101)</p>
+                                            <span>2020.06</span>
+                                        </div>
+                                        <div class="body-txt">
+                                            <p>Interactive media design class</p>
+                                            <span>2020.11</span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="r-b-info">
+                                    <div class="skills">
+                                        <p class="sub-head">SKILLS</p>
+        
+                                        <ul class="body-txt">
+                                            <li>PHOTOSHOP</li>
+                                            <li>ILLUSTRATOR</li>
+                                            <li>INDESIGN</li>
+                                            <li>XD</li>
+                                            <li>FIGMA</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JAVASCRIPT</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- index 영역 -->
+                <div class="index"></div>
+                
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>ABOUT</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-2 영역 -->
+        <section class="sec-2 section">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="selection">
+                        <div class="selection-box web-box">
+                            <div class="w-drawing"></div>
+                            <h2 class="main-txt">
+                                web
+                            </h2>
+                            <div class="sub-txt web-sub">
+                                <p>국립현대미술관 MMCA</p>
+                                <p>로에베 LOEWE</p>
+                                <p>스탠드오일 STAND OIL</p>
+                                <p>누데이크 NUDAKE</p>
+                            </div>
+                        </div>
+                        <div class="selection-box uiux-box">
+                            <div class="u-drawing"></div>
+                            <h2 class="main-txt">
+                                ui/ux
+                            </h2>
+                            <div class="sub-txt u-sub">
+                                <p>여행계획어플, 럽잇</p>
+                                <p>건강관리어플, 위드유</p>
+                            </div>
+                        </div>
+                        <div class="selection-box graphic-box">
+                            <div class="g-drawing"></div>
+                            <h2 class="main-txt">
+                                graphic
+                            </h2>
+                            <div class="sub-txt g-sub">
+                                <p>모어리브 패키지</p>
+                                <p>프레쉬 주스 포스터</p>
+                                <p>프리메라 제품 상세페이지</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- index 영역 -->
+                <div class="index"></div>
+
+
+
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>WORK</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-3 영역 -->
+        <!-- 국립현대미술관 -->
+        <section class="sec-3 section work">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="work-container">
+                        <div class="mockup-area">
+                            <a href="https://hsejinss.github.io/mmca.main/">
+                                <img src="./img/국립현대미술관_mockup.png" alt="국립현대미술관-작업물">
+                            </a>
+                        </div>
+                        
+                        <div class="des-area">
+                            <div class="head-des">
+                                <span class="category">리뉴얼사이트</span>
+                                <h2 class="project-name">국립현대미술관</h2>
+                                <div class="link">
+                                    <span class="website"><a href="https://hsejinss.github.io/mmca.main/">웹사이트</a></span>
+                                    <span class="web-pdf pdf"><a href="">PDF</a></span>
+                                </div>
+                            </div>
+        
+                            <div class="body-des">
+                                <p class="sub-head">전하고자 하는 의도</p>
+                                <p class="sub-body">
+                                    국립현대미술관은 미술작품을 수집, 전시, 보존하는 국립 미술관입니다.
+                                    다양한 작가들의 미술작품을 선보이며 독특한 프로그램을 통해서 다양한 경험을 제공합니다.
+                                    많은 컨텐츠, 정보들이 나열되어있던 기존 사이트를 리뉴얼하였습니다.
+                                    안정적인 여백 안에서 다양한 컨텐츠를 한눈에 알아보기 쉽게 정렬하였고,
+                                    스크롤시 컨텐츠가 흐르는 듯한 구동을 통해 부드러우면서 동적인 느낌을 표현했습니다.
+                                </p>
+                            </div>
+        
+                            <div class="body-sub-des">
+                                <div class="period">
+                                    <p class="work-period">작업기간</p>
+                                    <p>2022.05.18 - 2022.06.02</p>
+                                </div>
+                                <div class="program">
+                                    <p class="used-program">프로그램</p>
+                                    <p>PHOTOSHOP, VSC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="content-pagination">
+                    <ul class="page">
+                        <li class="on p-box1">
+                            <a href="#none" class="index">국립현대미술관</a>
+                        </li>
+                        <li class="p-box2">
+                            <a href="#none" class="index">로에베</a>
+                        </li>
+                        <li class="p-box3">
+                            <a href="#none" class="index">스탠드오일</a>
+                        </li>
+                        <li class="p-box4">
+                            <a href="#none" class="index">누데이크</a>
+                        </li>
+                        <li class="p-box5">
+                            <a href="#none" class="index">여행어플, 럽잇</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>WORK</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-4 영역 -->
+        <!-- 로에베 -->
+        <section class="sec-4 section work">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="work-container">
+                        <div class="mockup-area">
+                            <a href="https://hsejinss.github.io/loewe.main/">
+                                <img src="./img/로에베_mockup.png" alt="로에베-작업물">
+                            </a>
+                        </div>
+                        
+                        <div class="des-area">
+                            <div class="head-des">
+                                <span class="category">리뉴얼사이트</span>
+                                <h2 class="project-name">로에베 LOEWE</h2>
+                                <div class="link">
+                                    <span class="website"><a href="https://hsejinss.github.io/loewe.main/">웹사이트</a></span>
+                                    <span class="web-pdf pdf"><a href="">PDF</a></span>
+                                </div>
+                            </div>
+        
+                            <div class="body-des">
+                                <p class="sub-head">전하고자 하는 의도</p>
+                                <p class="sub-body">
+                                    스페인의 가죽의 명가라고 불리는 로에베는 스페인의 명품 의류 및 액세서리 브랜드입니다.
+                                    로에베만의 가죽 패널을 이어붙이거나 매듭 지은 스트랩 장식으로 독창적으로 표현하는 특징이 있습니다. SS 컬렉션을 맞이해 로에베의 신상품, 매거진등 다양한 컨텐츠로 구성하여
+                                    리뉴얼하였습니다. 스페인의 강렬한 여름을 표현하기 위해 채도가 높은 이미지를 선정하였고,
+                                    컨텐츠 사이에서 회전하는 텍스트, 클릭시 변하는 배경 이미지, 사용자가 스크롤할때 겹쳐지는 이미지로 구성하여 재미를 시각적 흐름이 자연스럽게 이어지는 효과를 연출하였습니다.
+                                </p>
+                            </div>
+        
+                            <div class="body-sub-des">
+                                <div class="period">
+                                    <p class="work-period">작업기간</p>
+                                    <p>2022.06.09 - 2022.06.22</p>
+                                </div>
+                                <div class="program">
+                                    <p class="used-program">프로그램</p>
+                                    <p>PHOTOSHOP, ILLUSTRATOR, VSC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="content-pagination">
+                    <ul class="page">
+                        <li class="p-box1">
+                            <a href="#none" class="index">국립현대미술관</a>
+                        </li>
+                        <li class="on p-box2">
+                            <a href="#none" class="index">로에베</a>
+                        </li>
+                        <li class="p-box3">
+                            <a href="#none" class="index">스탠드오일</a>
+                        </li>
+                        <li class="p-box4">
+                            <a href="#none" class="index">여행어플, 럽잇</a>
+                        </li>
+                        <li class="p-box5">
+                            <a href="#none" class="index">건강관리어플, 위드유</a>
+                        </li>
+                    </ul>
+                </div> -->
+                
+
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>WORK</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-5 영역 -->
+        <!-- 스탠드오일 -->
+        <section class="sec-5 section work">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="work-container">
+                        <div class="mockup-area">
+                            <a href="https://hsejinss.github.io/standoil.main/">
+                                <img src="./img/스탠드오일_mockup.png" alt="스탠드오일-작업물">
+                            </a>
+                        </div>
+                        
+                        <div class="des-area">
+                            <div class="head-des">
+                                <span class="category">리뉴얼사이트</span>
+                                <h2 class="project-name">스탠드오일</h2>
+                                <div class="link">
+                                    <span class="website"><a href="https://hsejinss.github.io/standoil.main/">웹사이트</a></span>
+                                    <span class="web-pdf pdf"><a href="">PDF</a></span>
+                                </div>
+                            </div>
+        
+                            <div class="body-des">
+                                <p class="sub-head">전하고자 하는 의도</p>
+                                <p class="sub-body">
+                                    스탠드 오일은 대표적인 비건패션 브랜드중 하나로 스탠드 오일만의 클래식한 형태에
+                                    기반한 타임리스, 미니멀 디자인을 선보입니다. 독특하고 미니멀한 느낌을 살려 기존
+                                    사이트를 리뉴얼 하였습니다. 메인컬러를 활용하여 따뜻하면서도 에너지가 넘치도록
+                                    제작했습니다. 배너에 SVG 애니메이션을 활용해 동적인 효과를 주었고, 리드미컬한
+                                    컨텐츠 슬라이더가 비주얼적으로 다양한 경험을 제공합니다.
+                                </p>
+                            </div>
+        
+                            <div class="body-sub-des">
+                                <div class="period">
+                                    <p class="work-period">작업기간</p>
+                                    <p>2022.05.18 - 2022.06.02</p>
+                                </div>
+                                <div class="program">
+                                    <p class="used-program">프로그램</p>
+                                    <p>PHOTOSHOP, ILLUSTRATOR, VSC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+                <div class="content-pagination">
+                    <ul class="page">
+                        <li class="p-box1">
+                            <a href="#none" class="index">국립현대미술관</a>
+                        </li>
+                        <li class="p-box2">
+                            <a href="#none" class="index">로에베</a>
+                        </li>
+                        <li class="on p-box3">
+                            <a href="#none" class="index">스탠드오일</a>
+                        </li>
+                        <li class="p-box4">
+                            <a href="#none" class="index">여행어플, 럽잇</a>
+                        </li>
+                        <li class="p-box5">
+                            <a href="#none" class="index">건강관리어플, 위드유</a>
+                        </li>
+                    </ul>
+                </div> -->
+                
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>WORK</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-6 영역 -->
+        <!-- 누데이크 -->
+        <section class="sec-6 section work">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="work-container">
+                        <div class="mockup-area">
+                            <a href="#none">
+                                <img src="./img/누데이크_mockup.png" alt="누데이크-작업물">
+                            </a>
+                        </div>
+                        
+                        <div class="des-area">
+                            <div class="head-des">
+                                <span class="category">리뉴얼사이트</span>
+                                <h2 class="project-name">누데이크 NUDAKE</h2>
+                                <div class="link">
+                                    <span class="website"><a href="https://hsejinss.github.io/nudake.main/">웹사이트</a></span>
+                                    <span class="web-pdf pdf"><a href="">PDF</a></span>
+                                </div>
+                            </div>
+        
+                            <div class="body-des">
+                                <p class="sub-head">전하고자 하는 의도</p>
+                                <p class="sub-body">
+                                    코로나로인해 경기침체·저성장이 이어지며 소비심리가 위축되었지만 다시금
+                                    거리두기 해제와 해외 입국의 제한 규제가 완화되면서 여행을 준비하는 소비자들이
+                                    많아지고 있는 추세입니다. 의미있는 여행을 꿈꾸는 사람들에게, 
+                                    럽잇의 슬로건인 “떠나자, 즐기자, 누구보다 행복하게”를 실현할 수 있도록
+                                    다양한 여행패키지 소개, 렌터카, 숙박 예약까지 한번에 가능한 간편한 어플입니다.
+                                </p>
+                            </div>
+        
+                            <div class="body-sub-des">
+                                <div class="period">
+                                    <p class="work-period">작업기간</p>
+                                    <p>2022.07.22 - 2022.08.03</p>
+                                </div>
+                                <div class="program">
+                                    <p class="used-program">프로그램</p>
+                                    <p>POTOSHOP, ILLUSTRATOR, VSC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                 
+                <div class="content-pagination">
+                    <ul class="page">
+                        <li class="p-box1">
+                            <a href="#none" class="index">국립현대미술관</a>
+                        </li>
+                        <li class="p-box2">
+                            <a href="#none" class="index">로에베</a>
+                        </li>
+                        <li class="p-box3">
+                            <a href="#none" class="index">스탠드오일</a>
+                        </li>
+                        <li class="on p-box4">
+                            <a href="#none" class="index">여행어플, 럽잇</a>
+                        </li>
+                        <li class="p-box5">
+                            <a href="#none" class="index">건강관리어플, 위드유</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>WORK</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-7 영역 -->
+        <!-- 여행걔획어플, 럽잇 -->
+        <section class="sec-7 section work">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="work-container">
+                        <div class="mockup-area">
+                            <a href="#none">
+                                <img src="./img/럽잇_mockup.png" alt="럽잇-작업물">
+                            </a>
+                        </div>
+                        
+                        <div class="des-area">
+                            <div class="head-des">
+                                <span class="category">ui/ux</span>
+                                <h2 class="project-name">여행어플, 럽잇</h2>
+                                <div class="link">
+                                    <span class="pdf"><a href="">PDF</a></span>
+                                </div>
+                            </div>
+        
+                            <div class="body-des">
+                                <p class="sub-head">전하고자 하는 의도</p>
+                                <p class="sub-body">
+                                    코로나로인해 경기침체·저성장이 이어지며 소비심리가 위축되었지만 다시금
+                                    거리두기 해제와 해외 입국의 제한 규제가 완화되면서 여행을 준비하는 소비자들이
+                                    많아지고 있는 추세입니다. 의미있는 여행을 꿈꾸는 사람들에게, 
+                                    럽잇의 슬로건인 “떠나자, 즐기자, 누구보다 행복하게”를 실현할 수 있도록
+                                    다양한 여행패키지 소개, 렌터카, 숙박 예약까지 한번에 가능한 간편한 어플입니다.                        </p>
+                            </div>
+        
+                            <div class="body-sub-des">
+                                <div class="period">
+                                    <p  class="work-period">작업기간</p>
+                                    <p>2022.05.27 - 2022.06.07</p>
+                                </div>
+                                <div class="program">
+                                    <p class="used-program">프로그램</p>
+                                    <p>FIGMA, ILLUSTRATOR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="content-pagination">
+                    <ul class="page">
+                        <li class="p-box1">
+                            <a href="#none" class="index">국립현대미술관</a>
+                        </li>
+                        <li class="p-box2">
+                            <a href="#none" class="index">로에베</a>
+                        </li>
+                        <li class="p-box3">
+                            <a href="#none" class="index">스탠드오일</a>
+                        </li>
+                        <li class="p-box4">
+                            <a href="#none" class="index">여행어플, 럽잇</a>
+                        </li>
+                        <li class="on p-box5">
+                            <a href="#none" class="index">건강관리어플, 위드유</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="bottom-page">
+                    <div class="l-pagination">
+                        <p>WORK</p>
+                    </div>
+                    <div class="r-pagination">
+                        <p>/2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec-8 영역 (contact)-->
+        <section class="contact section">
+            <div class="container">
+                <div class="left-area">
+                    <div class="left-content">
+                        <div class="contact-main">
+                            <img src="./img/contact-txt.jpg" alt="">
+                        </div>
+                        <div class="appreciation-txt">
+                            <p>THANK YOU FOR WATCHING</p>
+                            <p>
+                                다소 부족한 부분이 많지만, 시간과 애정을 가지고 제작한 작업물입니다.
+                                끝까지 봐주셔서 감사합니다. 기록하는 디자이너 한세진이었습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-area">
+                    <div class="right-content">
+                        <div class="info email">
+                            <p class="main-txt">E MAIL</p>
+                            <p class="body-txt">hansejin5896pp@gmail.com</p>
+                        </div>
+                        <div class="info contact">
+                            <p class="main-txt">CONTACT</p>
+                            <p class="body-txt">010-5013-8799</p>
+                        </div>
+                        <div class="info instagram">
+                            <p class="main-txt">INSTAGRAM</p>
+                            <p class="body-txt">@se_jinss</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer 영역 -->
+        <section class="footer">
+            <div class="copyright">
+                <p>DESIGNED BY SEJIN HAN</p>
+                <span>ⓒ sejin</span>
+            </div>
+        </section>
+
+        
+
+
+
+        
+
+
+
+    </div>
+</body>
+</html>

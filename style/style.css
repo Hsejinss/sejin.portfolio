@@ -1,0 +1,1326 @@
+@charset "utf-8";
+/* 마우스 */
+/* *{
+    cursor: none;
+}
+html, body{
+    cursor: url(../img/pen-cursor.svg), auto;
+}
+.pen-outer, .pen-cursor{
+    width: 48px;
+    height: 48px;
+
+}
+.pen-outer{
+    position: fixed;
+    top: -48px;
+    left: -48px;
+    z-index: 999999;
+    pointer-events: none;
+}
+.pen-cursor{
+    position: absolute;
+    background: url(../img/pen-cursor.svg);
+} */
+
+/* 햄버거버튼 */
+#hamburger{
+    display: none;
+}
+/* 전체 영역 */
+.container{
+    height: 100vh;
+}
+
+/* 배너 영역 */
+.banner{
+    position: relative;
+}
+.banner .container{
+    background-image: url(../img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 45px 80px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-area .left-menu, 
+.header-area .right-menu {
+    display: flex;
+    margin-right: -24px;
+}
+.header-area .left-menu li, 
+.header-area .right-menu li{
+    margin-right: 24px;
+}
+.header-logo {
+    width: 15px;
+    height: 35px;
+}
+.header-logo img,
+.banner-main-area .semicolon img{
+    object-fit: contain;
+}
+.banner-main-area{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translate(-40%, -10%);
+}
+.banner-main-area .m-box{
+    display: flex;
+    align-items: center;
+}
+.banner-main-area .semicolon{
+    width: 26px;
+    height: 120px;
+    margin-right: 30px;
+}
+.banner-main-area .txt-box{
+    width: 14vw;
+}
+.banner-main-area .txt-box h1{
+    font-size: 6.25rem;
+    font-family: "URiDdarSonGeurSsi";
+}
+.banner-main-area .txt-box p{
+    font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.b-arrrow-btn{
+    width: 65px;
+    height: 65px;
+    stroke: #222;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+
+    /* animation: bounce 0.8s linear infinite; */
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* 배너 메인 텍스트 */
+/* .m-box .txt-box{
+    display: grid;
+}
+.m-box .txt-box h1 {
+    width: 14vw;
+    animation: typing 2s steps(6), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  } */
+
+/* sec-1 영역 */
+.sec-1{
+    background-image: url(../img/grid-bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sec-1 .container{
+    /* 1760px 기준 */
+    width: 92vw;
+    border-right: 1px solid #222;
+
+    position: relative;
+}
+.sec-1 .content-box{
+    display: flex;
+    padding-left: 8vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.sec-1 .about-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-1 .profile-img{
+    width: 23vw;
+    /* display: none; */
+}
+
+/* 이름 텍스트 영역 / name영역 */
+/* .sec-1 .name{
+    display: inline-block; 
+    font-size: 3rem; 
+    line-height: 30px; 
+    border-right: 1px solid #222; 
+    padding-right: 2px; 
+    box-sizing: border-box; 
+    animation: cursor 0.4s infinite;
+
+    font-family: "URiDdarSonGeurSsi";
+}
+
+  
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+} */
+
+
+.sec-1 .name{
+    background: url(../img/한세진txt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    width: 400px;
+    height: 120px;
+    margin: 25px 0;
+}
+.sec-1 .right-area{
+    margin-left: 12%;
+}
+.sec-1 .right-area .top-main-head{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+.sec-1 .right-area .sub-head-txt{
+    margin-top: 35px;
+    width: 18vw;
+}
+.sec-1 .right-area .sub-head-txt p{
+    font-size: 0.875rem;
+}
+.sec-1 .right-area .personal-info{
+    margin-top: 70px;
+}
+.sec-1 .r-info .sub-head-txt{
+    font-family: "BrownStd";
+    margin-bottom: 15px;
+}
+
+.sec-1 .body-txt{
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+}
+
+/* right 영역 */
+.sec-1 .r-info .body-txt span{
+    font-size: 0.687rem;
+    color: #ababab;
+    margin-top: 3px;
+}
+.sec-1 .r-info{
+    margin-left: 15%;
+}
+.sec-1 .r-info .sub-head{
+    margin-bottom: 20px;
+}
+/* personal info */
+.sec-1 .personal-info li{
+    margin-bottom: 13px;
+    margin-top: 15px;
+    font-size: 0.875rem;
+}
+.sec-1 .info-box{
+    display: flex;
+}
+.sec-1 .info-box .l-box{
+    margin-right: 30px;
+}
+
+
+/* education */
+.sec-1 .r-t-info{
+    display: flex;
+}
+.sec-1 .r-info .r-t-info .edcation{
+    width: 6.25vw;
+}
+/* certification */
+.sec-1 .r-info .r-t-info .cerfificate{
+    width: 10vw;
+    margin-left: 4.7vw;
+}
+/* skills */
+.sec-1 .r-b-info{
+    width: 18vw;
+}
+.sec-1 .r-b-info .body-txt{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-1 .r-b-info .body-txt li{
+    margin-right: 30px;
+    margin-bottom: 8px;
+}
+.sec-1 .r-b-info {
+    margin-top: 45px;
+}
+
+
+/* pagination */
+.sec-1 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-1 .bottom-page p{
+    font-size: 0.75rem;
+}
+
+/* index 영역 */
+.sec-1 .index{
+    background: url(../img/about-index.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    width: 45px;
+    height: 150px;
+
+    position: absolute;
+    top: 10%;
+    left: 100.05%;
+}
+
+/* sec-2 영역 */
+.sec-2{
+    position: relative;
+}
+.sec-2 .container{
+    background-image: url(../img/sec-1bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 1080 이미지의 높이값 (작은값) / 1920 이미지의 너비값 (큰값) * 100 */
+    padding-bottom: 56.25%;
+}
+.sec-2 .container .inner-content{
+    width: 92vw;
+    height: 100vh;
+    border-right: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-2 .selection{
+    display: flex;
+    justify-content: center;
+    width: 63vw;
+    height: 100%;
+    align-items: center;
+}
+.sec-2 .selection .selection-box{
+    width: 33.333%;
+}
+.sec-2 .selection .main-txt{
+    font-size: 5rem;
+    font-family: "BrownStd";
+    font-weight: 500;
+    text-align: center;
+}
+.sec-2 .selection .sub-txt{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sec-2 .selection .sub-txt p{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+.sec-2 .selection .sub-txt p:last-child{
+    margin-bottom: 0;
+}
+.sec-2 .selection .w-drawing{
+    background-image: url(../img/web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 250px;
+    height: 250px;
+    animation: w-drawing 1.5s steps(8) infinite;
+    margin: 0 auto;
+}
+@keyframes w-drawing{
+    to{
+        background-position-x: -2000px;
+        /* 2250 / 9 = 250
+        2250 - 250 = 2000 */
+    }
+}
+
+.sec-2 .selection .u-drawing{
+    /* width: 200px; */
+    background-image: url(../img/uiux.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+    width: 250px;
+    height: 250px;
+    animation: u-drawing 1.5s steps(7) infinite;
+    margin: 0 auto;
+}
+@keyframes u-drawing {
+    to{
+        background-position-x: -1750px;
+        /* 2000 / 8 = 250
+        2000 - 250 = 1750 */
+    }
+}
+.sec-2 .selection .g-drawing{
+    /* width: 200px; */
+    /* height: 180px; */
+    background-image: url(../img/graphic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+    width: 250px;
+    height: 250px;
+    animation: g-drawing 1s steps(8) infinite;
+    margin: 0 auto;
+}
+@keyframes g-drawing {
+    to{
+        background-position-x: -2000px;
+        /* 2250 / 9 = 250
+        2250 - 250 = 2000*/
+    }
+}
+/* index 영역 */
+.sec-2 .container .index{
+    background: url(../img/work-index.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    width: 45px;
+    height: 150px;
+
+    position: absolute;
+    top: 20%;
+    left: 92.8%;
+    /* left: 92%; */
+}
+
+/* pagination */
+.sec-2 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-2 .bottom-page p{
+    font-size: 0.75rem;
+}
+
+
+/* sec-3 영역 */
+.sec-3 .container .inner-content{
+    position: absolute;
+    width: 92vw;
+    height: 100%;
+    border-right: 1px solid #222;
+}
+.sec-3 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-3 .bottom-page p{
+    font-size: 0.75rem;
+}
+/* work 공통영역 */
+.work{
+    position: relative;
+}
+.work .container{
+    background-image: url(../img/sec-1bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 1800 이미지의 높이값 (작은값) / 1920 이미지의 너비값 (큰값) * 100 */
+    /* padding-bottom: 56.25%; */
+    width: 100%;
+}
+.work .work-container{
+    display: flex;
+    align-items: center;
+    position: static;
+    top: 50%;
+    height: 100vh;
+}
+.work .mockup-area{
+    width: 37.5vw;
+    margin-left: 4%;
+}
+.work .des-area{
+    margin-left: 6.25%;
+}
+.work .des-area .category{
+    font-size: 0.875rem;
+    color: #adadad;
+}
+.work .des-area .project-name{
+    font-size: 2.5rem;
+    color: #222;
+}
+.work .des-area .link{
+    display: flex;
+    font-size: 0.875rem;
+    margin-top: 20px;
+}
+.work .des-area .link .website{
+    padding-right: 15px;
+    border-right: 1px solid #222;
+}
+.work .des-area .link .web-pdf{
+    padding-left: 15px;
+}
+
+/* 전하고자 하는 의도 */
+.work .body-des .sub-head{
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+.work .body-des .sub-body{
+    font-size: 1rem;
+    width: 437px;
+    line-height: 1.4;
+}
+/* 작업기간 */
+.work .body-sub-des{
+    margin-top: 35px;
+}
+.work .body-sub-des .period,
+.work .body-sub-des .program{
+    display: flex;
+}
+.work .body-sub-des .period{
+    margin-bottom: 12px;
+}
+.work .body-sub-des .work-period,
+.work .body-sub-des .used-program{
+    margin-right: 10px;
+}
+/* pagination */
+.work .content-pagination{
+    position: fixed;
+    right: 11vw;
+    bottom: 10%;
+    z-index: 9999;
+    display: none;
+}
+.work .content-pagination .page{
+    text-align: right;
+}
+.work .page li{
+    font-size: 0.9rem;
+    color: #c9c9c9;
+    margin-bottom: 10px;
+}
+.work .page li.on{
+    font-size: 0.9rem;
+    color: #222;
+}
+
+
+/* sec-4 영역 */
+.sec-4 .container .inner-content{
+    position: absolute;
+    width: 92vw;
+    height: 100%;
+    border-right: 1px solid #222;
+}
+.sec-4 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-4 .bottom-page p{
+    font-size: 0.75rem;
+}
+/* sec-5 영역 */
+.sec-5 .container .inner-content{
+    position: absolute;
+    width: 92vw;
+    height: 100%;
+    border-right: 1px solid #222;
+}
+.sec-5 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-5 .bottom-page p{
+    font-size: 0.75rem;
+}
+/* sec-6 영역 */
+.sec-6 .container .inner-content{
+    position: absolute;
+    width: 92vw;
+    height: 100%;
+    border-right: 1px solid #222;
+}
+.sec-6 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-6 .bottom-page p{
+    font-size: 0.75rem;
+}
+/* sec-7 영역 */
+.sec-7 .container .inner-content{
+    position: absolute;
+    width: 92vw;
+    height: 100%;
+    border-right: 1px solid #222;
+}
+.sec-7 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-7 .bottom-page p{
+    font-size: 0.75rem;
+}
+
+/* contact 영역 */
+.contact{
+    position: relative;
+}
+.contact .container{
+    background-image: url(../img/grid-bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact .container{
+    display: flex;
+}
+.contact .left-area{
+    width: 50%;
+    height: 100vh;
+}
+.contact .right-area{
+    width: 50%;
+    font-size: 0.85rem;
+}
+
+/* left영역 */
+.contact .left-content{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+    margin-left: 8%;
+}
+.contact .contact-main{
+    width: 33vw;
+}
+.contact .appreciation-txt{
+    width: 20.5vw;
+    height: 110px;
+    margin-left: 14.6%;
+    padding-top: 40px;
+}
+.contact .appreciation-txt p{
+    font-size: 0.875rem;
+}
+.contact .appreciation-txt p:last-child{
+    margin-top: 50px;
+}
+
+
+/* right 영역 */
+.contact .right-content{
+    position: absolute;
+    top: 20%;
+    padding-left: 10vw;
+}
+.contact .right-area .email{
+    display: flex;
+}
+.contact .right-area .contact{
+    display: flex;
+}
+.contact .right-area .instagram{
+    display: flex;
+}
+.contact .right-area .main-txt{
+    width: 8vw;
+}
+.contact .right-area .info{
+    margin-bottom: 45px;
+}
+
+/* footer 영역 */
+.footer{
+    background-color: #222;
+    width: 100%;
+    height: 250px;
+}
+.footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.footer .copyright p{
+    font-size: 0.875rem;
+    color: #eee;
+    font-family: "Pretendard";
+    font-weight: 400;
+}
+.footer .copyright span{
+    font-size: 0.875rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8px;
+}
+
+
+/* 미디어쿼리 */
+@media (max-width: 1600px){
+    /* 배너영역 */
+    .banner-main-area .txt-box h1{
+        font-size: 5rem;
+    }
+    /* sec-1 영역 */
+    .sec-1 .r-info{
+        margin-left: 10%;
+    }
+    .sec-1 .right-area .top-main-head{
+        font-size: 1.6rem;
+    }
+    .sec-1 .right-area .sub-head-txt{
+        width: 26vw;
+    }
+    .sec-1 .r-info .r-t-info .cerfificate{
+        margin-left: 1.7vw;
+    }
+    /* sec-2 영역 */
+    .sec-2 .selection{
+        width: 75vw;
+    }
+    .sec-2 .container .index{
+        left: 93%;
+    }
+    .sec-2 .selection .main-txt{
+        font-size: 4rem;
+    }
+    .sec-2 .selection .w-drawing{
+        background-image: url(../img/ico-web.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 160px;
+        height: 160px;
+        animation: none;
+    }
+    .sec-2 .selection .u-drawing{
+        background-image: url(../img/ico-uiux.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 160px;
+        height: 160px;
+        animation: none;
+    }
+    .sec-2 .selection .g-drawing{
+        background-image: url(../img/ico-graphic.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 160px;
+        height: 160px;
+        animation: none;
+    }
+
+    /* sec-3 영역 */
+    .work .mockup-area{
+        width: 45.5%;
+    }
+    .work .des-area{
+        margin-left: 3.25%;
+    }
+    .work .des-area .project-name{
+        font-size: 2.3rem;
+        margin-top: 5px;
+    }
+    .work .body-des .sub-body{
+        font-size: 0.875rem;
+    }
+
+    /* contact영역 */
+    .contact .appreciation-txt{
+        width: 25.5vw;
+        height: auto;
+    }
+
+    /* pagination */
+    .sec-2 .bottom-page,
+    .sec-3 .bottom-page,
+    .sec-4 .bottom-page,
+    .sec-5 .bottom-page,
+    .sec-6 .bottom-page,
+    .sec-7 .bottom-page{
+        padding: 0 50px;
+    }
+
+}
+@media (max-width: 1320px){
+    .container{
+        height: auto;
+    }
+    /* 배너영역 */
+    .banner-main-area .txt-box{
+        width: 17vw;
+    }
+    .banner .container{
+        height: 100vh;
+    }
+    /* absolute 제거 */
+    /* .banner{
+        position: static;
+    } */
+    .banner-main-area{
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 80px;
+        height: 100%;
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+    .b-arrrow-btn{
+        display: none;
+    }
+    
+    /* sec-1 */
+    .sec-1 .container{
+        width: 100%;
+        padding: 100px 0;
+        border-right: none;
+        position: static;
+    }
+    .sec-1 .content-box{
+        position: static;
+        top: auto;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-left: 0;
+        flex-direction: row;
+    }
+    .sec-1 .index{
+        display: none;
+    }
+    .sec-1 .bottom-page{
+        display: none;
+    }
+    .sec-1 .left-area{
+        width: 40%
+    }
+    .sec-1 .profile-img{
+        width: 350px;
+        height: 530px;
+        border-radius: 30% 0;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .sec-1 .right-area .top-main-head{
+        font-size: 1.45rem;
+    }
+    .sec-1 .name{
+        width: 350px;
+        height: 100px;
+        margin: 15px 0;
+    }
+    .sec-1 .about-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec-1 .about-info .l-info{
+        width: 100%;
+    }
+    .sec-1 .r-info{
+        width: 50vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+    .sec-1 .right-area{
+        width: 50%;
+        margin-left: 0;
+    }
+    .sec-1 .right-area .top-main-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45px;
+    }
+    .sec-1 .right-area .sub-head-txt{
+        width: 30vw;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .sec-1 .r-info .r-t-info .cerfificate{
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .sec-1 .right-area .personal-info{
+        /* margin-top: 40px; */
+        display: none;
+    }
+    .sec-1 .r-b-info{
+        margin-top: 0;
+    }
+    .sec-1 .r-b-info{
+        width: 10vw;
+    }
+    /* sec-2 */
+    .sec-2 .container{
+        padding-bottom: 0;
+    }
+    .sec-2 .container .inner-content{
+        border-right: none;
+        width: 100%;
+    }
+    .sec-2 .container .index{
+        display: none;
+    }
+    .sec-2 .bottom-page{
+        display: none;
+    }
+    /* work */
+    .work .container .inner-content{
+        position: static;
+        border-right: none;
+    }
+    .work .content-pagination{
+        right: 4vw;
+        bottom: 7%;
+    }
+    .work .page li{
+        font-size: 0.875rem;
+    }
+}
+@media (max-width:1205px){
+    /* 배너영역 */
+    .banner-main-area .txt-box h1{
+        font-size: 4rem;
+    }
+
+    /* work 영역 */
+    .work .mockup-area{
+        width: 50%;
+    }
+
+}
+@media (max-width: 960px){
+    /* 배너영역 */
+    .banner-main-area .txt-box{
+        width: 22vw;
+    }
+    .header-area .left-menu,
+    .header-area .right-menu{
+        display: none;
+    }
+    .header-logo{
+        margin: 0 auto;
+    }
+    /* 햄버거버튼 */
+    /* #hamburger {
+        position: relative;
+        width: 24px;
+        height: 10px;
+    }
+    #hamburger,
+    #hamburger span {
+        display: block;
+        z-index: 999;
+    }
+    #hamburger span {
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        top: 5px;
+        left: 10px;
+        background-color: #adadad;
+        transition: 0.3s;
+    }
+    #hamburger span:first-child {
+        top: 0;
+        left: 0;
+    }
+
+    #hamburger span:last-child {
+        top: 10px;
+        left: 0;
+    }
+    #hamburger.active span:first-child {
+        transform: rotate(45deg);
+        top: 50%;
+        background-color: #222;
+    }
+    #hamburger.active span:last-child {
+        transform: rotate(-45deg);
+        top: 50%;
+        background-color: #222;
+    } */
+
+    /* sec-1 영역 */
+    .sec-1 .content-box{
+        flex-direction: column;
+    }
+    .sec-1 .left-area{
+        width: 100%;
+    }
+    .sec-1 .profile-img{
+        width: 300px;
+        height: 380px;
+    }
+    .sec-1 .right-area .sub-head-txt{
+        width: 45vw;
+    }
+    .sec-1 .r-t-info .education{
+        width: 15vw;
+    }
+    .sec-1 .r-info .r-t-info .cerfificate{
+        width: 20vw;
+    }
+    .sec-1 .r-b-info .skills{
+        width: 20vw;
+    }
+
+
+    /* sec-2 영역 */
+    .sec-2 .selection .main-txt{
+        font-size: 3.5rem;
+    }
+    .sec-2 .selection .w-drawing,
+    .sec-2 .selection .u-drawing,
+    .sec-2 .selection .g-drawing{
+        width: 130px;
+        height: 130px;
+    }
+
+    /* work 영역 */
+    .sec-3 .container .inner-content{
+        width: 100%;
+    }
+    .contact .container{
+        height: 800px;
+    }
+    .contact .left-area,
+    .contact .right-area{
+        height: 100%;
+    }
+    .work .work-container{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 150px;
+    }
+    .work .mockup-area{
+        margin-left: 0;
+        width: 550px;
+    }
+    .work .body-sub-des .period p:last-child{
+        font-size: 0.875rem;
+    }
+    .work .body-sub-des .program p:last-child{
+        font-size: 0.875rem;
+    }
+    .work .des-area {
+        margin-left: 0;
+    }
+
+    /* contact 영역 */
+    .contact .appreciation-txt{
+        width: 30vw;
+        height: auto;
+    }
+    .contact .right-area .main-txt{
+        width: 14vw;
+    }
+
+}
+@media (max-width: 750px){
+    /* 배너 영역 */
+    .banner-main-area .txt-box{
+        width: 25vw;
+    }
+    /* sec-1 영역 */
+    .sec-1 .profile-img{
+        width: 260px;
+        height: 340px;
+    }
+    .sec-1 .right-area .top-main-head{
+        margin-top: 35px;
+    }
+    .sec-1 .right-area .top-main-head{
+        font-size: 1.25rem;
+    }
+    .sec-1 .name {
+        width: 280px;
+        height: 80px;
+        margin: 10px 0;
+    }
+
+    /* sec-2 영역 */
+    .sec-2 .container{
+        background: none;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid #d9d9d9;
+        border-top: 1px solid #d9d9d9;
+    }
+    .sec-2 .selection{
+        flex-direction: column;
+        padding: 100px 0;
+    }
+    .sec-2 .selection .selection-box{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .sec-2 .selection .selection-box:last-child{
+        margin-bottom: 0;
+    }
+    .sec-2 .container .inner-content{
+        height: auto;
+    }
+    .sec-2 .selection .w-drawing,
+    .sec-2 .selection .u-drawing,
+    .sec-2 .selection .g-drawing{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    .sec-2 .selection .main-txt {
+        font-size: 2.5rem;
+    }
+    .sec-2 .selection .sub-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-2 .selection .sub-txt p{
+        margin-bottom: 0;
+    }
+    /* sub-txt 영역 */
+    .sec-2 .selection .web-sub p:first-child{
+        padding-right: 10px;
+        border-right: 1px solid #222;
+    }
+    .sec-2 .selection .web-sub p:nth-child(2){
+        padding-right: 10px;
+        padding-left: 10px;
+        border-right: 1px solid #222;
+    }
+    .sec-2 .selection .web-sub p:nth-child(3){
+        padding-right: 10px;
+        padding-left: 10px;
+        border-right: 1px solid #222;
+    }
+    .sec-2 .selection .web-sub p:last-child{
+        padding-left: 10px;
+    }
+
+    .sec-2 .selection .u-sub p:nth-child(1){
+        padding-right: 10px;
+        border-right: 1px solid #222;
+    }
+    .sec-2 .selection .u-sub p:nth-child(2){
+        padding-left: 10px;
+    }
+    
+    .sec-2 .selection .g-sub p:nth-child(1){
+        padding-right: 10px;
+        border-right: 1px solid #222;
+    }
+    .sec-2 .selection .g-sub p:nth-child(2){
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #222;
+    }
+    .sec-2 .selection .g-sub p:nth-child(3){
+        padding-left: 10px;
+    }
+
+
+    /* work 영역 */
+    .work .container{
+        background-image: none;
+    }
+    .work .work-container{
+        padding-bottom: 200px;
+        padding-top: 100px;
+    }
+    .work .des-area .project-name{
+        font-size: 2rem;
+    }
+    .work .des-area .link{
+        margin-top: 12px;
+    }
+    .work .body-sub-des{
+        margin-top: 25px;
+    }
+
+    /* contact 영역 */
+    .contact .container{
+        flex-direction: column;
+        padding: 80px 50px;
+    }
+    .contact .left-area{
+        width: 100%;
+        position: static;
+        margin-bottom: 80px;
+    }
+    .contact .contact-main{
+        width: 60vw;
+    }
+    .contact .appreciation-txt{
+        width: 60vw;
+        height: auto;
+    }
+    .contact .appreciation-txt p:last-child{
+        margin-top: 30px;
+    }
+    .contact .right-area .info{
+        margin-bottom: 30px;
+    }
+    .contact .right-area{
+        position: static;
+        width: 100%;
+    }
+    .contact .left-content{
+        position: static;
+        top: auto;
+        transform: none;
+        margin-left: 0;
+    }
+    .contact .right-content{
+        position: static;
+        top: auto;
+        padding-left: 0;
+        margin-left: 14.6%;
+    }
+}
+@media(max-width:650px){
+    .banner-main-area .txt-box{
+        width: 30vw;
+    }
+
+    /* sec-1 영역 */
+    .sec-1 .profile-img{
+        width: 300px;
+        height: 380px;
+    }
+    .sec-1 .right-area{
+        width: 80vw;
+    }
+    .sec-1 .right-area .sub-head-txt{
+        width: 65vw;
+    }
+
+    .sec-1 .r-t-info .education{
+        width: 20vw;
+    }
+    .sec-1 .r-info .r-t-info .cerfificate{
+        width: 25vw;
+    }
+    .sec-1 .r-b-info .skills{
+        width: 20vw;
+    }
+}
+@media (max-width:540px){
+    /* 배너영역 */
+    .banner .container{
+        height: 800px;
+    }
+    .banner-main-area .txt-box{
+        width: 32vw;
+    }
+    .banner-main-area .txt-box h1{
+        font-size: 3.75rem;
+    }
+
+    /* sec-1 영역 */
+    .sec-1 .profile-img{
+        width: 290px;
+        height: 350px;
+    }
+    .sec-1 .right-area .sub-head-txt {
+        width: 70vw;
+    }
+
+    /* sec-2 영역 */
+    .sec-2 .selection .main-txt{
+        font-size: 2.25rem;
+    }
+}
+@media (max-width:500px){
+    
+}
