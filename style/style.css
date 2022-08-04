@@ -1349,9 +1349,6 @@ html, body{
     .sec-1 .r-b-info{
         width: 100%;
     }
-    .sec-1 .r-t-info .education .inner-box{
-        display: flex;
-    }
     .sec-1 .r-b-info .skills {
         width: 75vw;
     }
