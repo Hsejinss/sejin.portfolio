@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* 마우스 */
-/* *{
+*{
     cursor: none;
 }
 html, body{
@@ -21,7 +21,7 @@ html, body{
 .pen-cursor{
     position: absolute;
     background: url(../img/pen-cursor.svg);
-} */
+}
 
 /* 햄버거버튼 */
 #hamburger{
