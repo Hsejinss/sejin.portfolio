@@ -959,6 +959,7 @@ html, body{
     .work .container .inner-content{
         position: static;
         border-right: none;
+        width: 100%;
     }
     .work .content-pagination{
         right: 4vw;
@@ -1322,5 +1323,32 @@ html, body{
     }
 }
 @media (max-width:500px){
-    
+    .banner-main-area .semicolon {
+        width: 20px;
+        height: 100px;
+    }
+    .banner-main-area .txt-box {
+        width: 42VW;
+    }
+
+    /* sec-1영역 */
+    .sec-1 .r-info .sub-head{
+        font-size: 0.875rem;
+    }
+
+    /* sec-2 영역 */
+    .sec-2 .selection .w-drawing,
+    .sec-2 .selection .u-drawing,
+    .sec-2 .selection .g-drawing {
+        width: 80px;
+        height: 80px;
+    }
+    .sec-2 .selection .sub-txt p{
+        font-size: 0.875rem;
+    }
+
+    /* work 영역 */
+    .work .mockup-area {
+        width: 500px;
+    }
 }
