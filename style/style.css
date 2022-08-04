@@ -498,6 +498,7 @@ html, body{
 }
 .work .des-area{
     margin-left: 6.25%;
+    width: 50%;
 }
 .work .des-area .category{
     font-size: 0.875rem;
@@ -1097,6 +1098,10 @@ html, body{
     }
     .work .des-area {
         margin-left: 0;
+        width: 60vw;
+    }
+    .work .body-des .sub-body{
+        width: 100%;
     }
 
     /* contact 영역 */
@@ -1218,6 +1223,9 @@ html, body{
     .work .work-container{
         padding-bottom: 200px;
         padding-top: 100px;
+    }
+    .work .des-area {
+        width: 65vw;
     }
     .work .des-area .project-name{
         font-size: 2rem;
@@ -1350,5 +1358,29 @@ html, body{
     /* work 영역 */
     .work .mockup-area {
         width: 500px;
+    }
+    .work .des-area {
+        width: 75vw;
+    }
+
+    /* 폰트사이즈 변경 */
+    .work .des-area .project-name {
+        font-size: 1.75rem;
+    }
+    .work .des-area .category {
+        font-size: 0.75rem;
+    }
+    /* .work .body-des .sub-head{
+        font-size: 0.875rem;
+    } */
+
+    /* contact 영역 */
+    .contact .contact-main {
+        width: 70vw;
+    }.contact .left-area {
+        margin-bottom: 30px;
+    }
+    .contact .right-area .main-txt {
+        width: 24vw;
     }
 }
