@@ -1324,6 +1324,37 @@ html, body{
     .sec-1 .right-area .sub-head-txt {
         width: 70vw;
     }
+    .sec-1 .r-info{
+        width: 70vw;
+        flex-direction: column;
+    }
+    .sec-1 .r-t-info{
+        display: block;
+    }
+    .sec-1 .r-t-info .education{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .sec-1 .r-t-info .education .inner-box{
+        display: flex;
+    }
+    .sec-1 .education .body-txt:first-child{
+        margin-right: 40px;
+    }
+    .sec-1 .r-info .r-t-info .cerfificate{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .sec-1 .r-b-info{
+        width: 100%;
+    }
+    .sec-1 .r-t-info .education .inner-box{
+        display: flex;
+    }
+    .sec-1 .r-b-info .skills {
+        width: 75vw;
+    }
 
     /* sec-2 영역 */
     .sec-2 .selection .main-txt{
