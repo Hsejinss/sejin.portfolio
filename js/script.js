@@ -26,6 +26,30 @@ $(document).ready(function () {
     });
   });
 
+
+    // index 클릭시 해당 페이지로 이동
+    var ww = $(window).width();
+    var wh = $(window).height();
+  
+    function layout() {
+      page = ["work1", "work2", "work3", "work4", "work5"];
+  
+      $(".work").css({
+        width: ww,
+        height: wh,
+      });
+    }
+    const main = $(".banner").offset().top;
+    const sec1 = $(".sec-1").offset().top;
+    const sec2 = $(".sec-2").offset().top;
+    const sec3 = $(".sec-3").offset().top;
+    const sec4 = $(".sec-4").offset().top;
+    const sec5 = $(".sec-5").offset().top;
+    const sec6 = $(".sec-6").offset().top;
+    const sec7 = $(".sec-7").offset().top;
+    const contact = $(".contact").offset().top;
+
+
   media();
   function media() {
     var ww = $(window).width();
@@ -47,34 +71,75 @@ $(document).ready(function () {
         // 높이값이 풀페이지가 아닌 경우, 상단영역으로 올라가는 것 막아주기
         fitToSection: false,
       });
-    } else {}
+
+
+        // work-sec pagination 클릭시 해당 작업물로 이동
+        $(".p-box1").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec3 - 100,
+          });
+        });
+        $(".p-box2").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec4 - 100,
+          });
+        });
+        $(".p-box3").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec5 - 100,
+          });
+        });
+        $(".p-box4").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec6 - 100,
+          });
+        });
+        $(".p-box5").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec7 - 100,
+          });
+        });
+
+    }else if (ww < 760){
+        // work-sec pagination 클릭시 해당 작업물로 이동
+        $(".p-box1").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec3 + 50,
+          });
+        });
+        $(".p-box2").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec4 + 50,
+          });
+        });
+        $(".p-box3").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec5 + 50,
+          });
+        });
+        $(".p-box4").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec6 + 50,
+          });
+        });
+        $(".p-box5").click(function () {
+          // let a = $(this).attr('data-index');
+          $("html, body").animate({
+            scrollTop: sec7 + 50,
+          });
+        });
+    }
   }
 
-  // index 클릭시 해당 페이지로 이동
-  var ww = $(window).width();
-  var wh = $(window).height();
-
-  function layout() {
-    page = ["work1", "work2", "work3", "work4", "work5"];
-
-    $(".work").css({
-      width: ww,
-      height: wh,
-    });
-  }
-  const main = $(".banner").offset().top;
-  const sec1 = $(".sec-1").offset().top;
-  const sec2 = $(".sec-2").offset().top;
-  const sec3 = $(".sec-3").offset().top;
-  const sec4 = $(".sec-4").offset().top;
-  const sec5 = $(".sec-5").offset().top;
-  const sec6 = $(".sec-6").offset().top;
-  const sec7 = $(".sec-7").offset().top;
-  const contact = $(".contact").offset().top;
-
-  // $('.index').each(function(index){
-  //     $(this).attr('data-index', index);
-  // });
 
 
 
@@ -100,37 +165,12 @@ $(document).ready(function () {
     });
   });
 
-  // work-sec pagination 클릭시 해당 작업물로 이동
-  $(".p-box1").click(function () {
-    // let a = $(this).attr('data-index');
-    $("html, body").animate({
-      scrollTop: sec3 + 100,
-    });
+  // work page li 클릭시 on
+  $('.work .page li').click(function(){
+    $(this).addClass('on');
+    $(this).siblings().removeClass('on');
   });
-  $(".p-box2").click(function () {
-    // let a = $(this).attr('data-index');
-    $("html, body").animate({
-      scrollTop: sec4 + 100,
-    });
-  });
-  $(".p-box3").click(function () {
-    // let a = $(this).attr('data-index');
-    $("html, body").animate({
-      scrollTop: sec5 + 100,
-    });
-  });
-  $(".p-box4").click(function () {
-    // let a = $(this).attr('data-index');
-    $("html, body").animate({
-      scrollTop: sec6 + 100,
-    });
-  });
-  $(".p-box5").click(function () {
-    // let a = $(this).attr('data-index');
-    $("html, body").animate({
-      scrollTop: sec7 + 100,
-    });
-  });
+
 
   // work section으로 스크롤 했을때 work-index 나오게
   const index = $(".content-pagination");
