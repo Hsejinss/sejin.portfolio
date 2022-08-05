@@ -48,6 +48,7 @@ $(document).ready(function () {
     const sec6 = $(".sec-6").offset().top;
     const sec7 = $(".sec-7").offset().top;
     const contact = $(".contact").offset().top;
+    const footer = $(".footer").offset().top;
 
 
   media();
@@ -57,91 +58,87 @@ $(document).ready(function () {
       new fullpage("#wrap", {
         // 새로고침시 해당 페이지 유지
         anchors: [
-          "firstPage",
-          "secondPage",
-          "3rdPage",
-          "4rdPage",
-          "5rdPage",
-          "6rdPage",
+          "anchor1",
+          "anchor2",
+          "anchor3",
+          "anchor4",
+          "anchor5",
+          "anchor6",
         ],
         // 스크롤바 생성
         scrollBar: true,
         // 정상스크롤로 변경
-        normalScrollElements: ".contact, .footer",
+        normalScrollElements: ".sec-7, .contact, .footer",
         // 높이값이 풀페이지가 아닌 경우, 상단영역으로 올라가는 것 막아주기
         fitToSection: false,
       });
 
-
-        // work-sec pagination 클릭시 해당 작업물로 이동
-        $(".p-box1").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec3 - 100,
-          });
+      // work-sec pagination 클릭시 해당 작업물로 이동
+      $(".p-box1").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec3 - 100,
         });
-        $(".p-box2").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec4 - 100,
-          });
+      });
+      $(".p-box2").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec4 - 100,
         });
-        $(".p-box3").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec5 - 100,
-          });
+      });
+      $(".p-box3").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec5 - 100,
         });
-        $(".p-box4").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec6 - 100,
-          });
+      });
+      $(".p-box4").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec6 - 100,
         });
-        $(".p-box5").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec7 - 100,
-          });
+      });
+      $(".p-box5").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec7 - 100,
         });
+      });
 
     }else if (ww < 760){
-        // work-sec pagination 클릭시 해당 작업물로 이동
-        $(".p-box1").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec3 + 50,
-          });
+      // work-sec pagination 클릭시 해당 작업물로 이동
+      $(".p-box1").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec3 + 50,
         });
-        $(".p-box2").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec4 + 50,
-          });
+      });
+      $(".p-box2").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec4 + 50,
         });
-        $(".p-box3").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec5 + 50,
-          });
+      });
+      $(".p-box3").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec5 + 50,
         });
-        $(".p-box4").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec6 + 50,
-          });
+      });
+      $(".p-box4").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec6 + 50,
         });
-        $(".p-box5").click(function () {
-          // let a = $(this).attr('data-index');
-          $("html, body").animate({
-            scrollTop: sec7 + 50,
-          });
+      });
+      $(".p-box5").click(function () {
+        // let a = $(this).attr('data-index');
+        $("html, body").animate({
+          scrollTop: sec7 + 50,
         });
+      });
     }
   }
-
-
-
 
   // 메뉴 클릭시 해당 페이지로 이동
   $(".header-area .m-main").click(function(){
