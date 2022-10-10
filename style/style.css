@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* 마우스 */
-*{
+/* *{
     cursor: none;
 }
 html, body{
@@ -21,7 +21,7 @@ html, body{
 .pen-cursor{
     position: absolute;
     background: url(../img/pen-cursor.svg);
-}
+} */
 
 /* 햄버거버튼 */
 #hamburger{
@@ -623,7 +623,7 @@ html, body{
     font-size: 0.75rem;
 }
 /* sec-7 영역 */
-.sec-7 .container .inner-content{
+.sec-7 .container .inner-content {
     position: absolute;
     width: 92vw;
     height: 100%;
@@ -638,6 +638,24 @@ html, body{
     padding: 0 80px;
 } 
 .sec-7 .bottom-page p{
+    font-size: 0.75rem;
+}
+/* sec-8 영역 */
+.sec-8 .container .inner-content{
+    position: absolute;
+    width: 92vw;
+    height: 100%;
+    border-right: 1px solid #222;
+}
+.sec-8 .bottom-page{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+} 
+.sec-8 .bottom-page p{
     font-size: 0.75rem;
 }
 
