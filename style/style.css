@@ -699,6 +699,7 @@ html, body{
 }
 .contact .appreciation-txt p{
     font-size: 0.875rem;
+    line-height: 1.5;
 }
 .contact .appreciation-txt p:last-child{
     margin-top: 50px;
